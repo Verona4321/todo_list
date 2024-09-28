@@ -10,13 +10,16 @@ function createTask() {
     input.value = '';
 }
 
-list.addEventListener('click', function (evt) {
+tasks.addEventListener('click', function (evt) {
+    console.log(evt);
     if (evt.target.tagName === 'LI') {
         evt.target.classList.toggle('line-through');
     }
 });
 
-btn.getElementById('button').addEventListener('click', createTask);
+//btn.addEventListener('click', createTask);
+
+
 
 
 
